@@ -22,7 +22,7 @@ const __dirname = dirname(__filename);
 // Middleware to handle CORS
 app.use(
     cors({ 
-        origin: process.env.CLIENT_URL || "*",
+        origin: ["https://task-management-system-blush-delta.vercel.app"],
         methods: ["GET", "POST", "PUT", "DELETE"],
         allowedHeaders: ["Content-Type", "Authorization"],
     })
